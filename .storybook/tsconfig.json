@@ -1,0 +1,20 @@
+{
+  "extends": "../projects/angular-charts/tsconfig.lib.json",
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "../projects/**/*.spec.ts",
+    "../stories/**/*"
+  ],
+  "include": [
+    "../projects/**/*"
+  ],
+  "files": [
+    "./typings.d.ts"
+  ]
+}
