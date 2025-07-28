@@ -1,9 +1,17 @@
-import { Meta, StoryObj } from '@storybook/angular';
+import {Meta, moduleMetadata, StoryObj} from '@storybook/angular';
 import {LineChartComponent} from "./line-chart.component";
+import {NgxEchartsModule} from "ngx-echarts";
 
 const meta: Meta<LineChartComponent> = {
-  title: 'Example/LineChart',
+  title: 'Charts/LineChart',
   component: LineChartComponent,
+  decorators: [
+    moduleMetadata({
+      imports: [NgxEchartsModule.forRoot({
+        echarts: () => import('echarts')
+      })]
+    })
+  ],
   tags: ['autodocs'],
 };
 
@@ -11,7 +19,19 @@ export default meta;
 
 type Story = StoryObj<LineChartComponent>;
 
-export const Primary: Story = {
+export const LineChart: Story = {
   args: {
+    chartOptions: {
+      title: { text: 'Line Chart' },
+      tooltip: { trigger: 'axis' },
+      xAxis: { type: 'category', data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'] },
+      yAxis: { type: 'value' },
+      series: [{
+        name: 'Sales',
+        type: 'line',
+        data: [100, 120, 150, 170, 140, 160, 180],
+        smooth: true
+      }]
+    }
   },
 };
