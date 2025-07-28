@@ -1,25 +1,12 @@
 import { NgModule } from '@angular/core';
-import { AngularChartsComponent } from './angular-charts.component';
-import {ButtonComponent} from "./components/button/button.component";
-import {BrowserModule} from "@angular/platform-browser";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {CommonModule} from "@angular/common";
-
-
+import { LineChartComponent } from './components/line-chart/line-chart.component';
 
 @NgModule({
-  declarations: [
-    AngularChartsComponent,
-    ButtonComponent
-  ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    CommonModule,
-    ReactiveFormsModule
+    LineChartComponent
   ],
   exports: [
-    AngularChartsComponent
+    LineChartComponent
   ]
 })
 export class AngularChartsModule { }
