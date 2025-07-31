@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { LineChartComponent } from './components/line-chart/line-chart.component';
+import { PieChartComponent } from './components/pie-chart/pie-chart.component';
 
 @NgModule({
   imports: [
-    LineChartComponent
+    LineChartComponent,
+    PieChartComponent
   ],
   exports: [
-    LineChartComponent
-  ]
+    LineChartComponent,
+    PieChartComponent
+  ],
 })
 export class AngularChartsModule { }
