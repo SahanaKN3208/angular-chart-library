@@ -22,12 +22,15 @@ type Story = StoryObj<PieChartComponent>;
 export const PieChart: Story = {
   args: {
     chartOptions: {
+      title: {
+        text: 'Pie Chart'
+      },
       tooltip: {
         trigger: 'item'
       },
       legend: {
         orient: 'vertical',
-        left: 'left'
+        left: 'right'
       },
       series: [
         {

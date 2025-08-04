@@ -21,7 +21,7 @@ export class PieChartComponent {
   },
   legend: {
     orient: 'vertical',
-    left: 'left'
+    left: 'right'
   },
   series: [
     {

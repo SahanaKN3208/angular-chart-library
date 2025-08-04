@@ -14,7 +14,7 @@ import {NgxEchartsDirective} from "ngx-echarts";
 export class LineChartComponent {
   @Input() chartOptions: EChartsOption = {
     title: {
-      text: 'Sample Line Chart'
+      text: 'Line Chart'
     },
     tooltip: {
       trigger: 'axis'
