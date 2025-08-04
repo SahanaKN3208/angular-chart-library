@@ -1,5 +1,5 @@
 import {Meta, moduleMetadata, StoryObj} from '@storybook/angular';
-import {NgxEchartsModule} from "ngx-echarts";
+import {NgxEchartsDirective, NgxEchartsModule} from "ngx-echarts";
 import {PieChartComponent} from "./pie-chart.component";
 
 const meta: Meta<PieChartComponent> = {
@@ -9,7 +9,7 @@ const meta: Meta<PieChartComponent> = {
     moduleMetadata({
       imports: [NgxEchartsModule.forRoot({
         echarts: () => import('echarts')
-      })]
+      }),NgxEchartsDirective]
     })
   ],
   tags: ['autodocs'],

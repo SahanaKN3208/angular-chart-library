@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {NgxEchartsDirective} from "ngx-echarts";
+import {NgxEchartsDirective,NgxEchartsModule} from "ngx-echarts";
 import {EChartsOption} from "echarts";
 
 @Component({
@@ -7,7 +7,7 @@ import {EChartsOption} from "echarts";
   templateUrl: './pie-chart.component.html',
   standalone: true,
   imports: [
-    NgxEchartsDirective
+    NgxEchartsDirective,NgxEchartsModule
   ],
   styleUrls: ['./pie-chart.component.css']
 })
@@ -39,7 +39,7 @@ export class PieChartComponent {
         itemStyle: {
           shadowBlur: 10,
           shadowOffsetX: 0,
-          shadowColor: 'rgba(0, 0, 0, 0.5)'
+          shadowColor: 'rgba(91,134,248,0.5)'
         }
       }
     }

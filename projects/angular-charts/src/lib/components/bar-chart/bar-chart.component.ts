@@ -1,12 +1,11 @@
 import { Component, Input } from '@angular/core';
-// import { CommonModule } from '@angular/common';
-import { NgxEchartsModule } from 'ngx-echarts';
+import {NgxEchartsDirective, NgxEchartsModule} from 'ngx-echarts';
 import { EChartsOption } from 'echarts';
 
 @Component({
   selector: 'lib-bar-chart',
   standalone: true,
-  imports: [NgxEchartsModule],
+  imports: [NgxEchartsModule, NgxEchartsDirective],
   templateUrl: './bar-chart.component.html',
   styleUrls: ['./bar-chart.component.css']
 })
