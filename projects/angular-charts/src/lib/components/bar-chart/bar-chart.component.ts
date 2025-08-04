@@ -1,20 +1,20 @@
-import {Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
+// import { CommonModule } from '@angular/common';
+import { NgxEchartsModule } from 'ngx-echarts';
 import { EChartsOption } from 'echarts';
-import {NgxEchartsDirective} from "ngx-echarts";
 
 @Component({
-  selector: 'lib-line-chart',
+  selector: 'lib-bar-chart',
   standalone: true,
-  imports: [
-    NgxEchartsDirective
-  ],
-  templateUrl: './line-chart.component.html',
-  styleUrls: ['./line-chart.component.css']
+  imports: [NgxEchartsModule],
+  templateUrl: './bar-chart.component.html',
+  styleUrls: ['./bar-chart.component.css']
 })
-export class LineChartComponent {
+export class BarChartComponent {
+
   @Input() chartOptions: EChartsOption = {
     title: {
-      text: 'Line Chart'
+      text: 'Bar Chart'
     },
     tooltip: {
       trigger: 'axis'
@@ -29,10 +29,14 @@ export class LineChartComponent {
     series: [
       {
         name: 'Visits',
-        type: 'line',
+        type: 'bar',
         data: [120, 200, 150, 80, 70, 110, 130],
-        smooth: true
       }
     ]
   };
 }
+
+
+
+
+
