@@ -1,12 +1,12 @@
 import {Component, Input} from '@angular/core';
 import { EChartsOption } from 'echarts';
-import {NgxEchartsDirective} from "ngx-echarts";
+import {NgxEchartsDirective,NgxEchartsModule} from "ngx-echarts";
 
 @Component({
   selector: 'lib-line-chart',
   standalone: true,
   imports: [
-    NgxEchartsDirective
+    NgxEchartsDirective,NgxEchartsModule
   ],
   templateUrl: './line-chart.component.html',
   styleUrls: ['./line-chart.component.css']

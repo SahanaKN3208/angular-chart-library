@@ -1,6 +1,6 @@
 import {Meta, moduleMetadata, StoryObj} from '@storybook/angular';
 import {BarChartComponent} from "./bar-chart.component";
-import {NgxEchartsModule} from "ngx-echarts";
+import {NgxEchartsModule,NgxEchartsDirective} from "ngx-echarts";
 
 const meta: Meta<BarChartComponent> = {
   title: 'Charts/BarChart',
@@ -9,7 +9,7 @@ const meta: Meta<BarChartComponent> = {
     moduleMetadata({
       imports: [NgxEchartsModule.forRoot({
         echarts: () => import('echarts')
-      })]
+      }),NgxEchartsDirective]
     })
   ],
   tags: ['autodocs'],

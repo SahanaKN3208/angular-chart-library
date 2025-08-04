@@ -1,6 +1,6 @@
 import { Meta, moduleMetadata, StoryObj } from '@storybook/angular';
 import { ScatterChartComponent } from './scatter-chart.component';
-import { NgxEchartsModule } from 'ngx-echarts';
+import {NgxEchartsDirective, NgxEchartsModule} from 'ngx-echarts';
 
 const meta: Meta<ScatterChartComponent> = {
   title: 'Charts/ScatterChart',
@@ -10,7 +10,7 @@ const meta: Meta<ScatterChartComponent> = {
       imports: [
         NgxEchartsModule.forRoot({
           echarts: () => import('echarts')
-        })
+        }),NgxEchartsDirective
       ]
     })
   ],
@@ -25,7 +25,7 @@ export const ScatterChart: Story = {
   args: {
     chartOptions: {
       title: {
-        text: 'Sample Scatter Chart'
+        text: 'Scatter Chart'
       },
       tooltip: { trigger: 'item' },
       xAxis: { type: 'value' },

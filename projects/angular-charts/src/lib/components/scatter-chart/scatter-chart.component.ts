@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { EChartsOption } from 'echarts';
-import { NgxEchartsDirective } from 'ngx-echarts';
+import {NgxEchartsDirective, NgxEchartsModule} from 'ngx-echarts';
 
 @Component({
   selector: 'lib-scatter-chart',
   standalone:true,
   imports: [
-    NgxEchartsDirective
+    NgxEchartsDirective,NgxEchartsModule
   ],
   templateUrl: './scatter-chart.component.html',
   styleUrls: ['./scatter-chart.component.css']
@@ -15,7 +15,7 @@ import { NgxEchartsDirective } from 'ngx-echarts';
 export class ScatterChartComponent {
   @Input() chartOptions: EChartsOption = {
     title: {
-      text: 'Sample Scatter Chart'
+      text: 'Scatter Chart'
     },
     tooltip: {
       trigger: 'item'
