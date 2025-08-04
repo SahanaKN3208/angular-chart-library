@@ -22,7 +22,6 @@ type Story = StoryObj<BarChartComponent>;
 export const BarChart: Story = {
   args: {
     chartOptions: {
-      title:{text :'Bar Chart'},
       tooltip: { trigger: 'axis'},
       xAxis: { type: 'category', data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']},
       yAxis: { type: 'value'},
