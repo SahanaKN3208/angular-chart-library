@@ -22,16 +22,27 @@ type Story = StoryObj<LineChartComponent>;
 export const LineChart: Story = {
   args: {
     chartOptions: {
-      title:{text: 'Line Chart'},
-      tooltip: { trigger: 'axis' },
-      xAxis: { type: 'category', data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'] },
-      yAxis: { type: 'value' },
-      series: [{
-        name: 'Sales',
-        type: 'line',
-        data: [100, 120, 150, 170, 140, 160, 180],
-        smooth: true
-      }]
+      title: {
+        text: 'Line Chart'
+      },
+      tooltip: {
+        trigger: 'axis'
+      },
+      xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+      },
+      yAxis: {
+        type: 'value'
+      },
+      series: [
+        {
+          name: 'Visits',
+          type: 'line',
+          data: [120, 200, 150, 80, 70, 110, 130],
+          smooth: true
+        }
+      ]
     }
   },
 };
