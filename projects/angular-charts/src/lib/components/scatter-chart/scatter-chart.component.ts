@@ -3,7 +3,7 @@ import { EChartsOption } from 'echarts';
 import {NgxEchartsDirective, NgxEchartsModule} from 'ngx-echarts';
 
 @Component({
-  selector: 'lib-scatter-chart',
+  selector: 'ddip-scatter-chart',
   standalone:true,
   imports: [
     NgxEchartsDirective,NgxEchartsModule

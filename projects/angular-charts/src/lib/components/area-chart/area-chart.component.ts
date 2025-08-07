@@ -3,7 +3,7 @@ import {EChartsOption} from "echarts";
 import {NgxEchartsDirective, NgxEchartsModule} from "ngx-echarts";
 
 @Component({
-  selector: 'lib-area-chart',
+  selector: 'ddip-area-chart',
   standalone: true,
   imports: [NgxEchartsModule, NgxEchartsDirective],
   templateUrl: './area-chart.component.html',

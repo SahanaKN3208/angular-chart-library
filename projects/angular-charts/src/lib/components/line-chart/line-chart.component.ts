@@ -3,7 +3,7 @@ import { EChartsOption } from 'echarts';
 import {NgxEchartsDirective,NgxEchartsModule} from "ngx-echarts";
 
 @Component({
-  selector: 'lib-line-chart',
+  selector: 'ddip-line-chart',
   standalone: true,
   imports: [
     NgxEchartsDirective,NgxEchartsModule

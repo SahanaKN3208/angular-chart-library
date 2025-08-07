@@ -3,7 +3,7 @@ import {NgxEchartsDirective,NgxEchartsModule} from "ngx-echarts";
 import {EChartsOption} from "echarts";
 
 @Component({
-  selector: 'lib-pie-chart',
+  selector: 'ddip-pie-chart',
   templateUrl: './pie-chart.component.html',
   standalone: true,
   imports: [

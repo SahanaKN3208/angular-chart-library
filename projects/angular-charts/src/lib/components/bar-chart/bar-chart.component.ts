@@ -3,7 +3,7 @@ import {NgxEchartsDirective, NgxEchartsModule} from 'ngx-echarts';
 import { EChartsOption } from 'echarts';
 
 @Component({
-  selector: 'lib-bar-chart',
+  selector: 'ddip-bar-chart',
   standalone: true,
   imports: [NgxEchartsModule, NgxEchartsDirective],
   templateUrl: './bar-chart.component.html',
