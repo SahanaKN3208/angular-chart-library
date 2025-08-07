@@ -10,7 +10,9 @@ import {NgxEchartsDirective, NgxEchartsModule} from "ngx-echarts";
   styleUrls: ['./area-chart.component.css']
 })
 export class AreaChartComponent {
-
+  @Input() initOption: any = {
+    renderer: 'canvas'
+  }
   @Input() chartOptions: EChartsOption = {
     title: {
       text: 'Area Chart'

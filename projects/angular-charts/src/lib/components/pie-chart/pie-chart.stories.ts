@@ -53,6 +53,9 @@ export const PieChart: Story = {
           }
         }
       ]
+    },
+    initOption: {
+      renderer: 'canvas'
     }
-  },
+  }
 };

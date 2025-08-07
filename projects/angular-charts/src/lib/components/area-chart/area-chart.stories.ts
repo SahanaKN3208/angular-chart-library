@@ -48,6 +48,9 @@ export const AreaChart: Story = {
           areaStyle: {}
         }
       ]
+    },
+    initOption: {
+      renderer: 'canvas'
     }
   }
 }

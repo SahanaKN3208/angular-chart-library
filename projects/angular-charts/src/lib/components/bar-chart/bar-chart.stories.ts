@@ -41,6 +41,9 @@ export const BarChart: Story = {
           color: '#28a745' // Custom color for the bars
         }
         }]
-    }
+      },
+      initOption: {
+        renderer: 'canvas'
+      }
     }
   }

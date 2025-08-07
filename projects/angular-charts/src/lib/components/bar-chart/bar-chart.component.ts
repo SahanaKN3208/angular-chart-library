@@ -10,7 +10,9 @@ import { EChartsOption } from 'echarts';
   styleUrls: ['./bar-chart.component.css']
 })
 export class BarChartComponent {
-
+  @Input() initOption: any = {
+    renderer: 'canvas'
+  }
   @Input() chartOptions: EChartsOption = {
     title: {
       text: 'Sales by product category'

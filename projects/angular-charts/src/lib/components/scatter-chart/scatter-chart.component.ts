@@ -13,6 +13,9 @@ import {NgxEchartsDirective, NgxEchartsModule} from 'ngx-echarts';
 })
 
 export class ScatterChartComponent {
+  @Input() initOption: any = {
+    renderer: 'canvas'
+  }
   @Input() chartOptions: EChartsOption = {
     title: {
       text: 'Scatter Chart'

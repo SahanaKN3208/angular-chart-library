@@ -55,6 +55,9 @@ export const ScatterChart: Story = {
           ]
         }
       ]
+    },
+    initOption: {
+      renderer: 'canvas'
     }
-  },
+  }
 };

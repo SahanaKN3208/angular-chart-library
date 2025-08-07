@@ -41,4 +41,7 @@ export class LineChartComponent {
 
     ]
   };
+  @Input() initOption: any = {
+    renderer: 'canvas'
+  }
 }
