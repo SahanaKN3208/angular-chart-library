@@ -1,7 +1,6 @@
 import {Meta, moduleMetadata, StoryObj} from '@storybook/angular';
 import {LineChartComponent} from "./line-chart.component";
 import {NgxEchartsDirective, NgxEchartsModule} from "ngx-echarts";
-import {Input} from "@angular/core";
 
 const meta: Meta<LineChartComponent> = {
   title: 'Charts/LineChart',
