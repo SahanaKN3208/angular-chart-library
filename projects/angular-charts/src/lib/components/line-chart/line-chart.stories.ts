@@ -29,6 +29,7 @@ export const LineChart: Story = {
         trigger: 'axis'
       },
       legend:{
+        data:['Visits'],
         show: true,
         left: 'right'
       },
@@ -39,7 +40,6 @@ export const LineChart: Story = {
       yAxis: {
         type: 'value'
       },
-      legend:{data:['Visits']},
       series: [
         {
           name: 'Visits',

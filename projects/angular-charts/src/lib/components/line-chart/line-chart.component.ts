@@ -20,6 +20,7 @@ export class LineChartComponent {
       trigger: 'axis'
     },
     legend:{
+      data:['Visits'],
       show:true,
       left: 'right'
     },
@@ -29,9 +30,6 @@ export class LineChartComponent {
     },
     yAxis: {
       type: 'value'
-    },
-    legend:{
-      data:['Visits']
     },
     series: [
       {
