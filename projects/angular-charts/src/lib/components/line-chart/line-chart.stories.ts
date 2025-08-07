@@ -35,6 +35,7 @@ export const LineChart: Story = {
       yAxis: {
         type: 'value'
       },
+      legend:{data:['Visits']},
       series: [
         {
           name: 'Visits',

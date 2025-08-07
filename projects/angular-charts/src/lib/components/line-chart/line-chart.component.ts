@@ -26,6 +26,9 @@ export class LineChartComponent {
     yAxis: {
       type: 'value'
     },
+    legend:{
+      data:['Visits']
+    },
     series: [
       {
         name: 'Visits',
@@ -33,6 +36,7 @@ export class LineChartComponent {
         data: [120, 200, 150, 80, 70, 110, 130],
         smooth: true
       }
+
     ]
   };
 }
