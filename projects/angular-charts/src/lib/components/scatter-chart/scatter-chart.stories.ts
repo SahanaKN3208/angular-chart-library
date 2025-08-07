@@ -28,6 +28,10 @@ export const ScatterChart: Story = {
         text: 'Scatter Chart'
       },
       tooltip: { trigger: 'item' },
+      legend:{
+        show: true,
+        left: 'right'
+      },
       xAxis: { type: 'value' },
       yAxis: { type: 'value' },
       series: [

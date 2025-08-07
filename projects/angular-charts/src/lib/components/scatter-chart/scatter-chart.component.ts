@@ -20,6 +20,10 @@ export class ScatterChartComponent {
     tooltip: {
       trigger: 'item'
     },
+    legend:{
+      show: true,
+      left: 'right'
+    },
     xAxis: {
       type: 'value'
     },

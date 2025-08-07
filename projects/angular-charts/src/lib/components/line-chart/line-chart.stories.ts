@@ -28,6 +28,10 @@ export const LineChart: Story = {
       tooltip: {
         trigger: 'axis'
       },
+      legend:{
+        show: true,
+        left: 'right'
+      },
       xAxis: {
         type: 'category',
         data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']

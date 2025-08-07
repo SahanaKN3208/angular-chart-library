@@ -32,7 +32,9 @@ export const Default: Story = {
         trigger: 'axis'
       },
       legend: {
-        data: ['Series A', 'Series B']
+        show: true,
+        orient: 'vertical',
+        left: 'right'
       },
       xAxis: {
         type: 'category',
