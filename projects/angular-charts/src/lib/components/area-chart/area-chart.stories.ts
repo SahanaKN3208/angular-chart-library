@@ -1,10 +1,10 @@
 import {Meta, moduleMetadata, StoryObj} from '@storybook/angular';
-import {LineChartComponent} from "./line-chart.component";
-import {NgxEchartsDirective, NgxEchartsModule} from "ngx-echarts";
+import { AreaChartComponent} from "./area-chart.component";
+import {NgxEchartsModule,NgxEchartsDirective} from "ngx-echarts";
 
-const meta: Meta<LineChartComponent> = {
-  title: 'Charts/LineChart',
-  component: LineChartComponent,
+const meta: Meta<AreaChartComponent> = {
+  title: 'Charts/AreaChart',
+  component: AreaChartComponent,
   decorators: [
     moduleMetadata({
       imports: [NgxEchartsModule.forRoot({
@@ -17,19 +17,20 @@ const meta: Meta<LineChartComponent> = {
 
 export default meta;
 
-type Story = StoryObj<LineChartComponent>;
+type Story = StoryObj<AreaChartComponent>;
 
-export const LineChart: Story = {
+export const AreaChart: Story = {
   args: {
     chartOptions: {
       title: {
-        text: 'Line Chart'
+        text: 'Area Chart'
       },
       tooltip: {
         trigger: 'axis'
       },
-      legend:{
-        show: true,
+      legend: {
+        data: ['Visits'],
+        orient: 'vertical',
         left: 'right'
       },
       xAxis: {
@@ -39,15 +40,14 @@ export const LineChart: Story = {
       yAxis: {
         type: 'value'
       },
-      legend:{data:['Visits']},
       series: [
         {
           name: 'Visits',
           type: 'line',
           data: [120, 200, 150, 80, 70, 110, 130],
-          smooth: true
+          areaStyle: {}
         }
       ]
     }
-  },
-};
+  }
+}

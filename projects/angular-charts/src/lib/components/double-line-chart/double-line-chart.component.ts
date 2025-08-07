@@ -20,7 +20,9 @@ export class DoubleLineChartComponent {
       trigger: 'axis'
     },
     legend: {
-      data: ['Series A', 'Series B']
+      show: true,
+      orient: 'vertical',
+      left: 'right'
     },
     xAxis: {
       type: 'category',

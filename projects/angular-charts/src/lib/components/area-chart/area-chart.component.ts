@@ -1,26 +1,26 @@
 import {Component, Input} from '@angular/core';
-import { EChartsOption } from 'echarts';
-import {NgxEchartsDirective,NgxEchartsModule} from "ngx-echarts";
+import {EChartsOption} from "echarts";
+import {NgxEchartsDirective, NgxEchartsModule} from "ngx-echarts";
 
 @Component({
-  selector: 'lib-line-chart',
+  selector: 'lib-area-chart',
   standalone: true,
-  imports: [
-    NgxEchartsDirective,NgxEchartsModule
-  ],
-  templateUrl: './line-chart.component.html',
-  styleUrls: ['./line-chart.component.css']
+  imports: [NgxEchartsModule, NgxEchartsDirective],
+  templateUrl: './area-chart.component.html',
+  styleUrls: ['./area-chart.component.css']
 })
-export class LineChartComponent {
+export class AreaChartComponent {
+
   @Input() chartOptions: EChartsOption = {
     title: {
-      text: 'Line Chart'
+      text: 'Area Chart'
     },
     tooltip: {
       trigger: 'axis'
     },
-    legend:{
-      show:true,
+    legend: {
+      data: ['Visits'],
+      orient: 'vertical',
       left: 'right'
     },
     xAxis: {
@@ -30,17 +30,15 @@ export class LineChartComponent {
     yAxis: {
       type: 'value'
     },
-    legend:{
-      data:['Visits']
-    },
     series: [
       {
         name: 'Visits',
         type: 'line',
         data: [120, 200, 150, 80, 70, 110, 130],
-        smooth: true
+        areaStyle: {} // This enables the area fill
       }
-
     ]
   };
+
+
 }
